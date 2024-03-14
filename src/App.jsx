@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Header from "./header";
 import Map from "./map";
 import Details from "./details";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   // Use the IP address to fetch data from the API

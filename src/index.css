@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "Rubik";
-  src: url("src/assets/Rubik/Rubik-VariableFont_wght.ttf");
+  src: url("./fonts/Rubik-VariableFont_wght.ttf");
   font-display: swap;
 }
 body {
@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  background-image: url("/src/assets/pattern-bg-desktop.png");
+  background-image: url("/src/assets/pattern-bg-desktop.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 17.25rem;

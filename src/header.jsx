@@ -20,6 +20,7 @@ function Header({ onTrackButtonClick }) {
         <div className="input-group-append">
           <button
             className="track-button d-flex justify-content-center align-items-center border-0 h-100"
+            aria-label="Track"
             // eslint-disable-next-line no-undef
             onClick={onTrackButtonClick}
           >

@@ -1,0 +1,138 @@
+:root {
+  --very-dark-gray: hsl(0, 1%, 10%);
+  --medium-dark-gray: hsl(0, 0%, 18%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("src/assets/Rubik/Rubik-VariableFont_wght.ttf");
+  font-display: swap;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  background-image: url("/src/assets/pattern-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 17.25rem;
+}
+.input-group {
+  width: 35rem;
+}
+.input-group > input {
+  font-size: 1.125rem;
+}
+.track-button {
+  background-color: var(--very-dark-gray);
+  border-radius: 0 0.7rem 0.7rem 0;
+  width: 3rem;
+  transition: 0.3s ease-in-out;
+}
+.track-button:hover {
+  background-color: var(--medium-dark-gray);
+}
+#map {
+  height: calc(100vh - 17.25rem);
+  z-index: 1;
+}
+.details {
+  position: absolute;
+  width: 74.75rem;
+  height: 10rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  animation: appear 1s ease-out forwards;
+}
+
+@keyframes appear {
+  0% {
+    bottom: -20rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: -10rem;
+    opacity: 1;
+  }
+}
+
+.details > .row > div:not(:first-child)::after {
+  position: absolute;
+  content: "";
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.004rem;
+  height: 80%;
+  background-color: var(--dark-gray);
+}
+.title {
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+.detail {
+  font-size: 1.4rem;
+  font-weight: 700;
+  overflow-wrap: break-word;
+}
+.leaflet-top {
+  bottom: 1rem !important;
+  top: unset;
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 0.5rem;
+  }
+  .detail {
+    font-size: 1.1rem;
+    line-height: normal;
+  }
+  .details {
+    padding: 1rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .input-group {
+    width: 80%;
+  }
+  .input-group > input {
+    font-size: 0.8rem;
+  }
+  .details {
+    width: 75%;
+    height: 16rem;
+    bottom: -17rem;
+    padding: 1rem 0 !important;
+  }
+  @keyframes appear {
+    0% {
+      bottom: -25rem;
+      opacity: 0;
+    }
+    100% {
+      bottom: -17rem;
+      opacity: 1;
+    }
+  }
+  .title,
+  .detail {
+    text-align: center;
+  }
+  .details > .row > div {
+    line-height: 0 !important;
+  }
+
+  .details > .row > div:not(:first-child)::after {
+    all: unset;
+  }
+}

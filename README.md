@@ -9,7 +9,7 @@ The IP Address Tracker is a web application built with React and Bootstrap that 
 
 ## Features
 
-- Input field to enter an IP address or domain name.
+- Input field to enter an IP address.
 - Display of the location corresponding to the entered IP address on the map.
 - Additional information such as IP address, location coordinates.
 
@@ -22,7 +22,7 @@ The IP Address Tracker is a web application built with React and Bootstrap that 
 
 ## Usage
 
-1. Enter an IP address or domain name into the input field.
+1. Enter an IP address into the input field.
 2. Press the "Track" button to view the location associated with the entered IP address on the map.
 
 ##

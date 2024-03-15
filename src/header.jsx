@@ -8,8 +8,8 @@ function Header({ onTrackButtonClick }) {
           type="text"
           name="ip-address"
           className="form-control py-2 px-3 "
-          placeholder="Search for any IP address or domain"
-          aria-label="Search for any IP address or domain"
+          placeholder="Search for any IP address"
+          aria-label="Search for any IP address"
           aria-describedby="basic-addon2"
           onKeyDown={(e) => {
             if (e.key === "Enter") {
